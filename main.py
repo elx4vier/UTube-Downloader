@@ -315,9 +315,12 @@ class ItemEnterEventListener(EventListener):
         else:
             folder_base = get_xdg_dir("DOWNLOAD")
 
+        # ABRIR PASTA IMEDIATAMENTE (Assim que o download é solicitado)
+        if prefs["open_folder"]:
+            subprocess.Popen(["xdg-open", folder_base])
+
         def run():
             try:
-                # Comando minimalista e funcional
                 cmd = [
                     "yt-dlp",
                     "--no-part",
@@ -340,9 +343,6 @@ class ItemEnterEventListener(EventListener):
                 result = subprocess.run(cmd, capture_output=True, text=True, check=True)
                 full_path = result.stdout.strip().split('\n')[-1]
                 final_filename = os.path.basename(full_path)
-
-                if prefs["open_folder"]:
-                    subprocess.Popen(["xdg-open", folder_base])
 
                 subprocess.Popen([
                     "notify-send",
