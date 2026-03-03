@@ -1,0 +1,56 @@
+{
+  "app_name": "UTube Downloader",
+  "search_prompt": "Paste a link or type to search on YouTube",
+  
+  "invalid_link": "Invalid link",
+  "invalid_link_desc": "This link doesn't look like it's from YouTube",
+  
+  "no_results": "No results",
+  "no_connection": "No internet connection",
+  "search_failed": "Could not complete the search",
+  
+  "ytdlp_missing": "yt-dlp not found. Install it to continue.",
+  "download_failed": "Could not download",
+  "download_complete": "{name} saved in {folder}",
+  
+  "quality_max": "High quality",
+  "quality_max_desc": "Best quality available",
+  
+  "quality_med": "Standard quality",
+  "quality_med_desc": "Balance between quality and size",
+  
+  "quality_low": "Data saver",
+  "quality_low_desc": "Smaller file, reduced quality",
+  
+  "audio_lossless": "High fidelity",
+  "audio_lossless_desc": "Lossless, larger file (FLAC)",
+  
+  "audio_standard": "Standard quality",
+  "audio_standard_desc": "Balance between quality and size",
+  
+  "audio_light": "Data saver",
+  "audio_light_desc": "Smallest size, reduced quality",
+  
+  "ago": "ago",
+  
+  "second": "sec",
+  "seconds": "sec",
+  
+  "minute": "min",
+  "minutes": "min",
+  
+  "hour": "h",
+  "hours": "h",
+  
+  "day": "day",
+  "days": "days",
+  
+  "week": "week",
+  "weeks": "weeks",
+  
+  "month": "month",
+  "months": "months",
+  
+  "year": "year",
+  "years": "years"
+}

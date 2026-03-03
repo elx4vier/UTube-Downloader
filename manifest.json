@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "required_api_version": "^2.0.0",
+  "name": "UTube Downloader",
+  "description": "Download videos and audio from YouTube using yt-dlp",
+  "developer_name": "Xavier",
+  "icon": "images/icon.png",
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "UTube Downloader",
+      "default_value": "ytd",
+      "description": "Download from YouTube"
+    },
+    {
+      "id": "download_mode",
+      "type": "select",
+      "name": "Download Location",
+      "default_value": "separate",
+      "description": "Choose where files are saved. One folder saves everything to Downloads. Separate folders save videos to Videos and music to Music.",
+      "options": [
+        { "text": "One folder", "value": "single" },
+        { "text": "Separate folders", "value": "separate" }
+      ]
+    },
+    {
+      "id": "max_results",
+      "type": "select",
+      "name": "Search results",
+      "default_value": "6",
+      "options": [
+        { "text": "3 (faster)", "value": "3" },
+        { "text": "6 (balanced)", "value": "6" },
+        { "text": "10 (more results)", "value": "10" }
+      ]
+    },
+    {
+      "id": "show_thumbs",
+      "type": "select",
+      "name": "Thumbnails",
+      "default_value": "yes",
+      "options": [
+        { "text": "On", "value": "yes" },
+        { "text": "Off", "value": "no" }
+      ]
+    },
+    {
+      "id": "open_folder",
+      "type": "select",
+      "name": "Open folder",
+      "default_value": "yes",
+      "description": "Open folder when download starts",
+      "options": [
+        { "text": "On", "value": "yes" },
+        { "text": "Off", "value": "no" }
+      ]
+    }
+  ]
+}
